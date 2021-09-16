@@ -1,15 +1,21 @@
+import { RecipeCard } from "../Components/RecipeCard";
 import { useGetRecipes } from "../hooks/useGetRecipes";
 import { RecipeContainerDiv, RecipeContainerWrapper } from "../styles";
 
 export const RecipeContainer = () => {
-  const { data: getRecipes } = useGetRecipes();
+  const ingredients = "apples";
+  const { data: recipes } = useGetRecipes(ingredients);
 
-  console.log(getRecipes)
+  const getRecipes = () => {
+    return recipes?.map((recipe: any) => (
+      <RecipeCard key={recipe.id} data={recipe} />
+    ));
+  };
 
   return (
     <RecipeContainerWrapper className="wrapper">
       <RecipeContainerDiv className="container">
-        Here is the recipe container
+        {getRecipes()}
       </RecipeContainerDiv>
     </RecipeContainerWrapper>
   );
