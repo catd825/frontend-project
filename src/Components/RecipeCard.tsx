@@ -1,10 +1,10 @@
-export const RecipeCard = (data: any) => {
-  // fix this data mapping
-  // console.log(data.data);
+export const RecipeCard = (props: any) => {
+  const { recipeObj } = props;
+
   return (
     <div>
-      <img src={data.data.image} alt="" />
-      {data.data.title}
+      <img src={recipeObj.image} alt="" />
+      <p>{recipeObj.title}</p>
     </div>
   );
 };
