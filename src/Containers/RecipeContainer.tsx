@@ -4,9 +4,11 @@ import { RecipeContainerWrapper } from "../styles";
 
 export const RecipeContainer = () => {
   const ingredients = "apples";
-  const { data: recipes } = useGetRecipes(ingredients);
+  const number = 25;
+  const { data: recipes } = useGetRecipes(ingredients, number);
 
   const getRecipeList = () => {
+    //iterate to determine properties needed
     return <RecipeList recipes={recipes} />;
   };
 

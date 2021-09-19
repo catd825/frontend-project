@@ -1,3 +1,9 @@
+import { HeaderStyle } from "../styles";
+
 export const Header = () => {
-  return <>Here is the header</>;
+  return (
+    <HeaderStyle>
+      Here is the Header
+    </HeaderStyle>
+  );
 };
