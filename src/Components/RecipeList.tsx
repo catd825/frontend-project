@@ -11,5 +11,5 @@ export const RecipeList = (props: any) => {
     ));
   };
 
-  return <RecipeContainerDiv>{getRecipe()}</RecipeContainerDiv>;
+  return <RecipeContainerDiv className="recipeContainerDiv">{getRecipe()}</RecipeContainerDiv>;
 };
