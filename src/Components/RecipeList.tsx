@@ -1,5 +1,6 @@
 import { RecipeContainerDiv } from "../styles";
 import { RecipeCard } from "./RecipeCard";
+import { WelcomeBanner } from "./WelcomeBanner";
 
 // need to define props
 export const RecipeList = (props: any) => {
@@ -11,5 +12,12 @@ export const RecipeList = (props: any) => {
     ));
   };
 
-  return <RecipeContainerDiv className="recipeContainerDiv">{getRecipe()}</RecipeContainerDiv>;
+  return (
+    <>
+      {/* <WelcomeBanner/> */}
+      <RecipeContainerDiv className="recipeContainerDiv">
+        {getRecipe()}
+      </RecipeContainerDiv>
+    </>
+  );
 };

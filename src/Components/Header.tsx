@@ -3,7 +3,7 @@ import { HeaderStyle } from "../styles";
 export const Header = () => {
   return (
     <HeaderStyle>
-      Here is the Header
+      <h1>NavBar</h1>
     </HeaderStyle>
   );
 };

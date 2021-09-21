@@ -1,26 +1,37 @@
 import styled from "@emotion/styled";
 
-export const RecipeContainerDiv = styled.div({  
-  backgroundColor: "#D3C778",
+export const RecipeContainerDiv = styled.div({
+  backgroundColor: "white",
+  borderRadius: "10px",
   width: "75%",
-  margin: "auto",
-  padding: "20px 0px",
-  display: 'inlineFlex',
-  flexWrap: 'wrap'
+  margin: "15px auto",
+  padding: "30px",
+  display: "inlineFlex",
+  flexWrap: "wrap",
+  position: 'sticky'
 });
 
 export const RecipeContainerWrapper = styled.div({
   width: "100%",
   textAlign: "center",
-  top: "60px",
+  top: "80px",
   bottom: "0",
   position: "fixed",
   overflow: "scroll"
 });
 
 export const HeaderStyle = styled.div({
-  backgroundColor: "red",
+  backgroundColor: "white",
   width: "100%",
   position: "fixed",
-  height: "40px"
+  height: "80px"
+});
+
+export const RecipeCardStyle = styled.div({
+  margin: "auto",
+  fontSize: "20px",
+  p: {
+    marginTop: "0px"
+  },
+  img: { borderRadius: "10px" }
 });

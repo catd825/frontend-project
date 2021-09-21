@@ -1,10 +1,11 @@
+import { RecipeCardStyle } from "../styles";
+
 export const RecipeCard = (props: any) => {
   const { recipeObj } = props;
-  console.log(recipeObj)
   return (
-    <div>
-      <img src={recipeObj.image} alt="" />
+    <RecipeCardStyle>
+      <img height="231px" width="312px" src={recipeObj.image} alt="" />
       <p>{recipeObj.title}</p>
-    </div>
+    </RecipeCardStyle>
   );
 };
